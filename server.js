@@ -119,6 +119,10 @@ app.use(express.json());
 const GOERLI_ADDRESS = "0x899Fd88e7E374d44bd8AEfC975911ccB461f9E06";
 const BSC_ADDRESS = "0x97c403762F1Da9fF52A3b747A34E8Ae0C20e9913";
 
+app.get("/", (_req, res) => {
+  res.send("Hello World");
+});
+
 app.post("/api/setstate/:proposalid/:proposalstate", async (req, res) => {
   try {
     const { proposalid, proposalstate } = req.params;
