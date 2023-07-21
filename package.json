@@ -1,0 +1,16 @@
+{
+  "name": "chainlink-func",
+  "version": "1.0.0",
+  "description": "Chainlink-func-protoype",
+  "main": "server.js",
+  "scripts": {
+    "test": "start"
+  },
+  "dependencies": {
+    "ethers": "^5.5.4",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "author": "shivbhonde04@gmail.com",
+  "license": "ISC"
+}
