@@ -119,8 +119,8 @@ const app = express();
 app.use(express.json());
 app.use(morgan("combined"));
 
-const GOERLI_ADDRESS = "0x899Fd88e7E374d44bd8AEfC975911ccB461f9E06";
-const BSC_ADDRESS = "0x97c403762F1Da9fF52A3b747A34E8Ae0C20e9913";
+const GOERLI_ADDRESS = "0x32419B24ee80b3eB9483ABea153dcB4c41F6d968";
+const BSC_ADDRESS = "0x8940d80D0FBd2E07468404C9487D6E58B66E61Cb";
 
 app.get("/", (_req, res) => {
   res.send("Hello World");
