@@ -2,6 +2,7 @@
 const express = require("express");
 require("dotenv").config();
 const { ethers } = require("ethers");
+const morgan = require("morgan");
 
 const contractABI = [
   {
@@ -113,8 +114,10 @@ const contractABI = [
     type: "function",
   },
 ];
+
 const app = express();
 app.use(express.json());
+app.use(morgan("combined"));
 
 const GOERLI_ADDRESS = "0x899Fd88e7E374d44bd8AEfC975911ccB461f9E06";
 const BSC_ADDRESS = "0x97c403762F1Da9fF52A3b747A34E8Ae0C20e9913";
