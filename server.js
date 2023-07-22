@@ -125,7 +125,7 @@ const BSC_ADDRESS = "0x97c403762F1Da9fF52A3b747A34E8Ae0C20e9913";
 app.get("/", (_req, res) => {
   res.send("Hello World");
 });
-app.get("/getRandomNumber", (_req, res) => {
+app.get("/api/getRandomNumber", (_req, res) => {
   res.send(`number: ${Math.random()}`);
 });
 
